@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".AddRecordActivity">
+
+    <EditText
+        android:id="@+id/meters_edit_text"
+        android:layout_width="294dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="16dp"
+        android:background="#FFFFFF"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toTopOf="@+id/seconds_edit_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_record_text_view"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="Enter distance (meters)" />
+
+    <EditText
+        android:id="@+id/seconds_edit_text"
+        android:layout_width="292dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="50dp"
+        android:background="#FFFFFF"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toTopOf="@+id/save_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/meters_edit_text"
+        tools:text="Enter duration (seconds)" />
+
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="95dp"
+        android:layout_height="41dp"
+        android:text="SAVE"
+        app:layout_constraintBottom_toTopOf="@+id/add_record_imageView"
+        app:layout_constraintEnd_toEndOf="@+id/seconds_edit_text"
+        app:layout_constraintStart_toStartOf="@+id/seconds_edit_text"
+        app:layout_constraintTop_toBottomOf="@+id/seconds_edit_text" />
+
+    <TextView
+        android:id="@+id/add_record_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD RECORD"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.087" />
+
+    <ImageView
+        android:id="@+id/add_record_imageView"
+        android:layout_width="419dp"
+        android:layout_height="253dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="w,1000:625"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/speed_meter" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
